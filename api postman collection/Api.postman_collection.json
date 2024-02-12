@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "14da86bb-955b-4dbc-a545-9659df57890f",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19608397"
+	},
+	"item": [
+		{
+			"name": "getDataById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/getDataById?api_password=38PBpdhbEtRhsmN78&lang=en&id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getDataById"
+					],
+					"query": [
+						{
+							"key": "api_password",
+							"value": "38PBpdhbEtRhsmN78"
+						},
+						{
+							"key": "lang",
+							"value": "en"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/admin/login?api_password=38PBpdhbEtRhsmN78&lang=en&email=mohammed@gmail.com&password=123456789",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						"login"
+					],
+					"query": [
+						{
+							"key": "api_password",
+							"value": "38PBpdhbEtRhsmN78"
+						},
+						{
+							"key": "lang",
+							"value": "en"
+						},
+						{
+							"key": "email",
+							"value": "mohammed@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changeStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/changeStatus?api_password=38PBpdhbEtRhsmN78&lang=en&id=1&active=0",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"changeStatus"
+					],
+					"query": [
+						{
+							"key": "api_password",
+							"value": "38PBpdhbEtRhsmN78"
+						},
+						{
+							"key": "lang",
+							"value": "en"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "active",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/admin/logout?api_password=38PBpdhbEtRhsmN78&lang=en&email=mohammed@gmail.com&password=123456789&auth_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2FkbWluL2xvZ2luIiwiaWF0IjoxNzA2OTQwMzM3LCJleHAiOjE3MDY5NDM5MzcsIm5iZiI6MTcwNjk0MDMzNywianRpIjoiTzV3aUJZUkFTOXRER2hjWCIsInN1YiI6IjEiLCJwcnYiOiJkZjg4M2RiOTdiZDA1ZWY4ZmY4NTA4MmQ2ODZjNDVlODMyZTU5M2E5In0.CiPyhPXtYYMrQfpugE-lrkDTvThm5pinIuCqcvnZSVs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "api_password",
+							"value": "38PBpdhbEtRhsmN78"
+						},
+						{
+							"key": "lang",
+							"value": "en"
+						},
+						{
+							"key": "email",
+							"value": "mohammed@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "123456789"
+						},
+						{
+							"key": "auth_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2FkbWluL2xvZ2luIiwiaWF0IjoxNzA2OTQwMzM3LCJleHAiOjE3MDY5NDM5MzcsIm5iZiI6MTcwNjk0MDMzNywianRpIjoiTzV3aUJZUkFTOXRER2hjWCIsInN1YiI6IjEiLCJwcnYiOiJkZjg4M2RiOTdiZDA1ZWY4ZmY4NTA4MmQ2ODZjNDVlODMyZTU5M2E5In0.CiPyhPXtYYMrQfpugE-lrkDTvThm5pinIuCqcvnZSVs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user profile api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/user/login_user?api_password=38PBpdhbEtRhsmN78&lang=en&email=user@gmail.com&password=123456789",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"login_user"
+					],
+					"query": [
+						{
+							"key": "api_password",
+							"value": "38PBpdhbEtRhsmN78"
+						},
+						{
+							"key": "lang",
+							"value": "en"
+						},
+						{
+							"key": "email",
+							"value": "user@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "123456789"
+						},
+						{
+							"key": "auth_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2FkbWluL2xvZ2luIiwiaWF0IjoxNzA2OTQwMzM3LCJleHAiOjE3MDY5NDM5MzcsIm5iZiI6MTcwNjk0MDMzNywianRpIjoiTzV3aUJZUkFTOXRER2hjWCIsInN1YiI6IjEiLCJwcnYiOiJkZjg4M2RiOTdiZDA1ZWY4ZmY4NTA4MmQ2ODZjNDVlODMyZTU5M2E5In0.CiPyhPXtYYMrQfpugE-lrkDTvThm5pinIuCqcvnZSVs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user data api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/user/user_profiler?api_password=38PBpdhbEtRhsmN78&lang=en&email=user@gmail.com&password=123456789",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"user_profiler"
+					],
+					"query": [
+						{
+							"key": "api_password",
+							"value": "38PBpdhbEtRhsmN78"
+						},
+						{
+							"key": "lang",
+							"value": "en"
+						},
+						{
+							"key": "email",
+							"value": "user@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "123456789"
+						},
+						{
+							"key": "auth_token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2FkbWluL2xvZ2luIiwiaWF0IjoxNzA2OTQwMzM3LCJleHAiOjE3MDY5NDM5MzcsIm5iZiI6MTcwNjk0MDMzNywianRpIjoiTzV3aUJZUkFTOXRER2hjWCIsInN1YiI6IjEiLCJwcnYiOiJkZjg4M2RiOTdiZDA1ZWY4ZmY4NTA4MmQ2ODZjNDVlODMyZTU5M2E5In0.CiPyhPXtYYMrQfpugE-lrkDTvThm5pinIuCqcvnZSVs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
